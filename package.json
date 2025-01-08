@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Data visualization dashboard",
   "main": "index.js",
+  "type": "module", 
   "directories": {
     "doc": "docs"
   },
   "dependencies": {
+    "d3": "^7.9.0",
     "fast-csv": "^4.3.6"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "node js/processing.js"
   },
