@@ -1,0 +1,35 @@
+{
+  "name": "nd-crime-visualized",
+  "version": "1.0.0",
+  "description": "Data visualization dashboard",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "fast-csv": "^4.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node js/processing.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realshak7781/crime-data-dashboard.git"
+  },
+  "keywords": [
+    "data",
+    "visualization",
+    "new",
+    "delhi",
+    "crime",
+    "data",
+    "map"
+  ],
+  "author": "Sharique Akhtar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realshak7781/crime-data-dashboard/issues"
+  },
+  "homepage": "https://github.com/realshak7781/crime-data-dashboard#readme"
+}
