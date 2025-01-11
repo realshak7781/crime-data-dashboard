@@ -10,7 +10,7 @@ More information about the dataset can be found on [ND Open Data](https://delhip
 
 ## Further plans
 
-Since I switched to a specialization track in Artificial Intelligence and Data Science, I plan on training a Generative ML model on the whole dataset to predict the location and time of potential crimes.
+I plan on training a Generative ML model on the whole dataset to predict the location and time of potential crimes.
 
 ## License
 
