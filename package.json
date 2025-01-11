@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Data visualization dashboard",
   "main": "index.js",
-  "type": "module", 
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
@@ -12,7 +12,10 @@
     "fast-csv": "^4.3.6"
   },
   "scripts": {
-    "test": "node js/processing.js"
+    "start": "node js/processing.js",
+    "predeploy": "npm run copy-files",
+    "deploy": "gh-pages -d dist",
+    "copy-files": "node scripts/copyFiles.js"
   },
   "repository": {
     "type": "git",
@@ -32,5 +35,9 @@
   "bugs": {
     "url": "https://github.com/realshak7781/crime-data-dashboard/issues"
   },
-  "homepage": "https://github.com/realshak7781/crime-data-dashboard#readme"
+  "homepage": "https://realshak7781.github.io/crime-data-dashboard/",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "shelljs": "^0.8.5"
+  }
 }

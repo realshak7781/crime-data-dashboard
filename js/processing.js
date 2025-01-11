@@ -1,14 +1,18 @@
-import * as d3 from 'd3';
-import fs from 'fs/promises';
+const DATASET_PATH = "data/nd-dataset.csv";
 
-const DATASET_PATH = './data/nd-dataset.csv';
+init();
 
-// Example: Reading and parsing a CSV file
-fs.readFile(DATASET_PATH, 'utf8')
-    .then((data) => {
-        const parsedData = d3.csvParse(data);
-        console.log(parsedData);
-    })
-    .catch((err) => {
-        console.error('Error reading file:', err);
+function init() {
+  loadData().then((result) => {
+    dataset = result;
+  });
+}
+
+// Loading the data in a JS Promise
+function loadData() {
+  return new Promise((resolve, reject) => {
+    d3.csv(DATASET_PATH).then(function (data) {
+      resolve(data);
     });
+  });
+}
