@@ -110,17 +110,16 @@ function initMap() {
   const accessToken =
     "pk.eyJ1IjoiamFuYXJvc21vbmFsaWV2IiwiYSI6ImNra2lkZmFqMzAzbzEydnM2ZWpjamJ5MnMifQ.0njPGy4UD3K-ZDq3M7e9ZA";
 
-  var map = L.map("crime_map").setView([40.73, -73.99], 12.5);
-
+  // Change the coordinates to New Delhi
+  const map = L.map("crime_map").setView([28.6139, 77.2090], 12.5);
+  
   L.tileLayer(
-    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=" +
-      accessToken,
+    "https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}{@2x}?access_token=" + accessToken,
     {
-      id: "mapbox/dark-v9",
       tileSize: 512,
       zoomOffset: -1,
     }
-  ).addTo(map);
+  ).addTo(map); 
 }
 
 function updateSuspectAge(value) {
