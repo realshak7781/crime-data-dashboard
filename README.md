@@ -1,6 +1,6 @@
 # New Delhi Crime Visualization Dashboard
 
-<!-- ![Crime Visualization Dashboard](/data/project-thumbnail.png) -->
+![Crime Visualization Dashboard](/data/image.png)
 
 Visualization project that features New Delhi Crime Dataset from 2019 to 2021. 
 
